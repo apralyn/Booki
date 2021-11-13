@@ -13,7 +13,6 @@ body a:hover {
 }
 /* header section */
 header {
-
     display: flex;
     justify-content: space-between; /* pushed logo and nav far away from each other */
     align-items: center;
@@ -34,21 +33,19 @@ nav li a {
     text-decoration: none;
     color: black;
 }
-
 nav li a:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
     padding-top: 25px;
     margin: 0;
 }
-
 /* end of header section */
 /* end of header section */
 
-/* start search-bar section */
 
+/* start search-button section */
 .search {
-    margin: 0px 25px 10px 25px;
+    padding: 0px 25px 10px 25px;
 }
 .search h4{
     font-size: 15px;
@@ -64,7 +61,6 @@ form {
     margin: 10px auto;
     display: flex;
 }
-
 form a {
     text-decoration: none;
     color: white;
@@ -72,29 +68,23 @@ form a {
 .fa-map-marker-alt {
     font-size: 15px;
     background-color: #F2F2F2;
-    /* background-color: #ececec; */
     border-radius: 10px 0 0 10px;
     padding: 12px;
     color: black;
 }
 input {
-    border: 1px solid #F2F2F2; /* redo 11.9 */
+    border: 1px solid #F2F2F2;
     width: 200px;
     padding: 10px;
     font-size: 15px;
 }
-
 ::placeholder {
     color: black;
     font-size: 12px;
     font-weight: 600;
 }
-/* input, .button, .fa-info {
-    border: 1px solid #ececec;
-} comment out 11.9*/
-
 .button {
-    border: 1px solid #F2F2F2; /* redo 11.9 */
+    border: 1px solid #F2F2F2;
     background-color: #0065FC;
     color: white;
     font-size: 12px;
@@ -104,22 +94,20 @@ input {
     border-radius: 0 10px 10px 0;
     cursor: pointer;
 }
-
 .button2 {
       display: none;
 }
-
 .button:active {
     color: #e2e2e2;
 }
 /* end of search-bar */
 /* end of search-bar */
 
+
 /* filter section starts here */
 .filters {
     display: flex;
 }
-
 .filters h5 {
     padding: 6px 12px 0 0;
 }
@@ -128,7 +116,6 @@ input {
     padding: 0;
     margin: 10px 0 15px 0;
 }
-
 .filter-list {
     font-size: 12px;
     font-weight: 600;
@@ -138,7 +125,6 @@ input {
     border: 2px solid #F2F2F2;
     border-radius: 30px;
 }
-
 .filters i { /* blue circle on icon */
     color: #0065FC;
     background-color: #deebff;
@@ -147,9 +133,7 @@ input {
     left: -2px;
     top: 0px;
     padding: 12px;
-
 }
-
 #blue-kid {
     padding: 13.5px 15.5px 13.5px 15.5px;
     background-color: #deebff;
@@ -157,17 +141,16 @@ input {
     left: -4px;
     top: 0px;
 }
-
 .filters a {
     text-decoration: none;
     color: black;
 }
-
 .filter-list:active, .filter-list:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.15), 0 17px 50px 0 rgba(0,0,0,0.10);
 }
 /* end of filters */
 /* end of filters */
+
 
 /* more than section starts here */
 .more-than {
@@ -175,7 +158,7 @@ input {
     align-items: center;
 }
 .fa-info {
-    border: 1px solid #F2F2F2; /* redo 11.9 */
+    border: 1px solid #F2F2F2;
     position: relative;
     bottom: 9px;
     font-size: 7px;
@@ -193,17 +176,16 @@ input {
 /* end of more-than section */
 /* end of more-than section */
 
+
 /* main-section starts here */
 main {
     display: flex;
     margin: 10px auto;
-    /* padding-bottom: 10px; */
 }
 main a, .activities a {
     text-decoration: none;
     color: black;
 }
-
 /* Left gray box starts here */
 .left-gray h4 {
     font-size: 15px;
@@ -215,19 +197,15 @@ main a, .activities a {
     margin: 0;
     padding: 20px 10px 20px 30px;
 }
-
 .left-gray {
     display: flex;
     flex-wrap: wrap;
     background-color: #F2F2F2;
-    /* background-color: #ececec; */
     margin-left: 25px;
     width: 70%;
     height: auto;
     border-radius: 10px;
-
 }
-
 .hcards-container {
     display: flex;
     flex-wrap: wrap;
@@ -236,8 +214,9 @@ main a, .activities a {
     justify-content: space-evenly;
     padding: 5px;
 }
-
 .hotel-cards {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     width: 170px;
     height: 135px;
@@ -246,16 +225,13 @@ main a, .activities a {
     margin-left: 5px;
     box-shadow: .5px .5px 10px .5px rgba(0,0,0,0.1);
 }
-
 .left-gray img {
     width: 169px;
     height: 74px;
     padding-right: 5px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
-
 }
-
 .hotel-info {
     display: flex;
     flex-direction: column;
@@ -265,7 +241,6 @@ main a, .activities a {
     font-weight: bold;
     padding-left: 5px;
   }
-
 .hotel-price {
   font-size: 10px;
   padding: 2px 0 2px 5px;
@@ -276,7 +251,6 @@ main a, .activities a {
     color: #0065FC;
     padding: 2px 0 0 5px;
   }
-
 #hotel-stars01 i:nth-child(5), #hotel-stars03 i:nth-child(5), #hotel-stars04 i:nth-child(n+4), #hotel-stars05 i:nth-child(5)  {
     color: #e2e2e2;
 }
@@ -284,44 +258,27 @@ main a, .activities a {
 #hotel-stars02 i:nth-child(5) {
     color: #0065FC;
 }
-
-/* #hotel-stars03 i:nth-child(5) {
-    color: #e2e2e2;
-} */
-
-/* #hotel-stars04 i:nth-child(n+4) {
-    color: #e2e2e2;
-}
-
-#hotel-stars05 i:nth-child(5) {
-    color: #e2e2e2;
-} */
-
 /* end of Left Gray box */
 /* end of Left Gray box */
 
 
-/* This is Aside Section (right gray starts here) */
+/* Aside Section (right gray starts here) */
 aside {
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    /* background-color: #ececec; */
     margin: 0 35px 0 25px;
     border-radius: 10px;
 }
-
 aside h4 {
     font-size: 15px;
     margin: 25px 0 5px 20px;
 }
-
 .fa-chart-line{
     float: right;
     padding-right: 25px;
 }
 .popular-container {
-    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -346,9 +303,6 @@ aside img {
     object-fit: cover;
     border-radius: 10px 0 0 10px;
 }
-/* .popcard1, .popcard2, .popcard3  {
-    flex-shrink: 1;
-} */
 /* used id because of padding to separate the price from hotel name*/
 #sun-hotel {
     padding: 8px 0 10px 5px;
@@ -363,11 +317,9 @@ aside .hotel-price {
     margin-top: 0;
     padding: 5px 0 10px 5px;
 }
-
 aside .hotel-stars {
     padding: 5px 0 0 5px;
 }
-
 #hotel-astars01 i:nth-child(5){
     color: #e2e2e2;
     margin-top: 5px;
@@ -379,10 +331,24 @@ aside .hotel-stars {
 /* end of Aside */
 /* end of Aside */
 
+/* Breakpoint for main to match activities section */
+@media screen and (max-width: 976px) {
+    main {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    aside, .left-gray {
+        width: 100%;
+        margin: 5px auto;
+    }
+}
 
 /* activities starts here - in flex */
 .activities {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .activities h4 {
     font-size: 15px;
@@ -397,22 +363,18 @@ aside .hotel-stars {
     text-decoration: none;
     color: black;
 }
-
 .act-card-container {
     display: flex;
-    flex-flow: wrap;
     justify-content: center;
-    gap: 20px;
-    margin: 15px 0 40px 0;
-
+    flex-wrap: wrap;
+    margin-bottom: 35px;
 }
 .act-lchild, .act-rchild {
     display: flex;
     justify-content: space-around;
-    /* flex: 1 1; */
     gap: 20px;
     padding: 0 20px;
-
+    margin: 0 auto;
 }
 .block-1 {
     background-color: white;
@@ -443,22 +405,18 @@ aside .hotel-stars {
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
-
 .card2 {
     height: 160px;
 }
 .card2 img {
     height: 120px;
 }
-
 .card3 {
     height: 115px;
 }
 .card3 img {
     height: 70px;
 }
-
-
 .block-3 {
     background-color: white;
     width: 210px;
@@ -488,7 +446,6 @@ aside .hotel-stars {
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
-
 .card5 {
     height: 130px;
 }
@@ -501,41 +458,39 @@ aside .hotel-stars {
 .card6 img {
     height: 100px;
 }
-
 /* activities end */
 /* activities end */
 
-/* footer section starts here */
-/* footer section starts here */
-/* footer section starts here */
+
 /* footer section starts here */
 .ft-container {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     padding: 15px 0 85px 30px;
     gap: 120px;
-    /* background-color: #E2E2E2; */
     background-color: #F2F2F2;
 }
 .ft-container p {
     font-size: 11px;
     margin: 0;
     padding: 5px 50px 5px 0;
-
 }
 .ft-container a{
     text-decoration: none;
     color: black;
 }
-
 .ft-container a:hover {
     color: #0065FC;
 }
-
 .ft-container h5 {
     margin: 15px 0 10px 0;
 }
-
+.ft-info {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
 /* end of footer */
 
 
@@ -545,7 +500,7 @@ MQ reference:
 beyond desktop max-width: 1200px
 Desktop max-width: 992px
 Tablet max-width: 768px
-iPhone max-width: 485px
+Phone max-width: 450px
 */
 
             /* tablet 768px*/
@@ -557,19 +512,13 @@ iPhone max-width: 485px
         margin: 0 auto;
         float: none !important;
     }
-    header, main {
+    header {
         width: 100%;
-    }
-    main {
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: column;
     }
     .hcards-container {
         justify-content: center;
-        padding: 25px;
+        padding: 5px 25px;
+        flex-wrap: wrap;
     }
     .hotel-cards {
         height: 135px;
@@ -581,11 +530,9 @@ iPhone max-width: 485px
     }
     .popular-container {
         flex-direction: row;
-        padding: 10px;
         flex-wrap: wrap;
         gap: 10px;
     }
- 
     .aside-cards {
         margin: 18px auto;
         flex-direction: column;
@@ -613,15 +560,10 @@ iPhone max-width: 485px
         padding:1px 0 1px 5px;
         margin: 0;
     }
-
     #hotel-astars02 i:nth-child(5) {
         color: #e2e2e2;
         margin-top: 0;
     } 
-    .activities {
-        width: 100%;
-
-    }
     .act-card-container {
         flex-direction: column;
         gap: 20px;
@@ -630,14 +572,13 @@ iPhone max-width: 485px
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
-
     footer {
         padding: 0;
         margin: 0 auto;
         width: 100%;
     }
     .ft-container {
-        padding: 25px;
+        padding: 25px 100px 25px 25px;
         gap: 65px;
         flex-wrap: wrap;
     }
@@ -647,45 +588,31 @@ iPhone max-width: 485px
 
             /* phone*/
   @media screen and (min-width: 100px) and (max-width:450px) {
-
-    /* body {
-        max-width: 375px;
-        padding: 0;
-        margin: 0 auto;
-        float: none !important;
-        min-width: 100px;
-    } */
     header {
         flex-direction: column;
-        margin: auto 10px;
     }
     .logo {
         height: 46px;
         margin: 20px 0 10px 0;
     }
-
     nav li {
         font-size: 16px;
     }
-
     nav li:hover {
         border-bottom: 3px solid #0065FC;
         padding-bottom: 12px;
     }
-
     #nav1 {
         margin: 0 70px 0 10px;
     }
     #nav2 {
         margin-right: 100px;
-
     }
     nav li a:hover {
         border-top: 0;
         padding-bottom: 15px;
     }
-
-/* Search and Filter  Section */
+/* Search and Filter Section */
     .search h4 {
         font-size: 20px;
         font-weight: 700;
@@ -712,7 +639,6 @@ iPhone max-width: 485px
         font-size: 18px;
         padding-left: 10px;
     }
-
     .button2 {
         font-size: 18px;
         display:inline-block;
@@ -727,8 +653,6 @@ iPhone max-width: 485px
     .button1 {
         display: none;
     }
-
-/* ----------- filter buttons -------- */
     .filters h5 {
         font-size: 18px;
         padding-top: 10px;
@@ -741,13 +665,11 @@ iPhone max-width: 485px
     .filter-list {
         font-size: 16px;
     }
-/* ------icon and more than 500--------- */
     .fa-info {
         font-size: 11px;
         padding: 7px 11px;
         margin: 0 7px;
     }
-
     #more-than-mobile {
         font-size: 16px;
         display: block;
@@ -756,7 +678,6 @@ iPhone max-width: 485px
     #more-than-desktop {
         display: none;
     }
-
 /* main section */
     main {
         flex-direction: column-reverse;
@@ -771,10 +692,8 @@ iPhone max-width: 485px
         border-radius: 0%;
         height: auto;
     }
-    aside h4, #aim, #aim2 {
-        font-size: 22px;
-    }
     aside h4 {
+        font-size: 22px;
         padding-top: 10px;
         margin-bottom: 5px;
     }
@@ -785,6 +704,7 @@ iPhone max-width: 485px
         margin: 20px auto;
     }
     .aside-cards {
+        flex-direction: row;
         padding: 0;
         width: 340px;
         height: 150px;
@@ -798,18 +718,34 @@ iPhone max-width: 485px
         border-radius: 20px 0 0 20px;
     }
     aside .hotel-info {
-        gap: 3px;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 5px;
         margin: 5px 0 0 8px;
     }
     .hotel-name {
         font-size: 16px;
     }
     .hotel-cards {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 2px auto;
         width: 340px;
         height: 190px;
         border-radius: 20px;
     }
-    
+    .hcards-container {
+        margin: 0 auto;
+        gap: 15px;
+    }
+    .left-gray h4 {
+        font-size: 22px;
+        margin: 25px auto;
+    }
+    .left-gray p {
+        font-size: 18px;
+    }
     .left-gray {
         flex-direction: column;
         background-color: white;
@@ -818,42 +754,34 @@ iPhone max-width: 485px
         width: 100%;
         margin: 0;
     }
-    .left-gray h4 {
-        margin: 25px auto;
-    }
-    .left-gray p {
-        font-size: 18px;
-    }
-    
-    
-    
-    .popular-container{
-        gap: 10px;
-    }
-    .hcards-container {
-        gap: 15px;
-    }
     .left-gray img {
         width: 340px;
         height: 105px;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
     }
-
 /* Activities in Marseille section */
+    .activities {
+        margin: 0;
+    }
     .activities p {
         font-size: 16px;
     }
+    .activities h4 {
+        font-size: 22px;
+        margin: 0 0 0 35px;
+    }
     .act-card-container {
+        width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        margin: 35px auto;
     }
     .act-lchild, .act-rchild {
         flex-direction: column;
         gap: 35px;
-    }
-   
+    }  
     /* activities cards - white background */
     .block-1, .act-card, .block-3, .act-rchild .act-card {
         width: 340px;
@@ -865,11 +793,11 @@ iPhone max-width: 485px
         height: 130px;
         border-radius: 20px 20px 0 0;
     }
-/* footer section */
+    /* footer section */
    .ft-container {
        flex-wrap: wrap;
-       width: 100%;
        gap: 20px;
+       padding-right: 25%;
    }
    .ft-container h5 {
        font-size: 18px;
